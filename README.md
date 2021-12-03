@@ -10,4 +10,4 @@
 Il est également possible de changer l'éxecution. Au lieu de lancer le module "Launcher()" dans le main, on peut lancer les fonctions de tests pour les instances Ip et Ir ( ou les 2).
 Ceci rempli automatiquement les fchier csv.
 
-Code et rapport entierement rédigé par SAUVETRE Lou-Anne.
+###Code et rapport entierement rédigé par SAUVETRE Lou-Anne.
