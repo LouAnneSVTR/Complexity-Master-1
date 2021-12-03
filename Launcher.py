@@ -60,7 +60,7 @@ def launcher():
         average_bound = int(sum(D) / (2 * p))
 
         print()
-        print(D)
+
         print("borne inferieur 'maximum' : ", max_bound)
         print("borne inferieur 'moyenne' : ", average_bound)
 

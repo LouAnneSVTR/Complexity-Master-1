@@ -1,21 +1,19 @@
 import random
-
 import Launcher
 import csv
 
-from Algorithme.LPT import LPT, LPT_I_r
-from Algorithme.LSA import LSA, LSA_I_r
-from Algorithme.RMA import RMA, RMA_I_r
+from Algorithme.LPT import LPT, LPT_Average_I_r
+from Algorithme.LSA import LSA, LSA_Average_I_r
+from Algorithme.RMA import RMA, RMA_Average_I_r
 
 """
 Author SAUVÊTRE Lou-Anne, M1 ALMA, University of Nantes
 
-This program aims to implement the LSA (List Scheduling Algorithm) method which takes the tasks in the order initially provided
-and assigns each task to the first available machine.
+This program aims to implement the Test with Ip and Ir instances and push it on a CSV file.
 
 """
 
-
+#Generation Ip
 def generate_Ip_test():
     # Data
     p_data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 70, 80, 90, 100, 120, 140, 160,
@@ -55,7 +53,7 @@ def generate_Ip_test():
 
     return tab_result_LSA, tab_result_LPT, tab_result_RMA
 
-
+#Generation Ir test with datas.
 def generate_Ir_test():
     m = random.randint(2, 50)
     n = random.randint(m + 1, m * m + m + 1)
@@ -68,9 +66,9 @@ def generate_Ir_test():
 
     L = Launcher.generate_tab_I_r(D, M, m, n, k, d_min, d_max)
 
-    average_LSA = LSA_I_r(L)
-    average_LPT = LPT_I_r(L)
-    average_RMA = RMA_I_r(L)
+    average_LSA = LSA_Average_I_r(L)
+    average_LPT = LPT_Average_I_r(L)
+    average_RMA = RMA_Average_I_r(L)
 
     return m, n, k, d_min, d_max, average_LSA, average_LPT, average_RMA
 

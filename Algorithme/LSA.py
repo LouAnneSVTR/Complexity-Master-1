@@ -22,7 +22,8 @@ def LSA(machine_list, task_list, middle_bound, max_bound):
     return max_, ratio
 
 
-def LSA_I_r(L):
+#For calcul the average between Ir instances
+def LSA_Average_I_r(L):
     L_copy = L.copy()
     out = 0
     for i in L_copy:
