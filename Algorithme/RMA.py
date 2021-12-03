@@ -1,5 +1,12 @@
 import random
 
+"""
+Author SAUVÊTRE Lou-Anne, M1 ALMA, University of Nantes
+
+This program aims to implement the LSA (List Scheduling Algorithm) method which takes the tasks in the order initially provided
+and assigns each task to the first available machine.
+
+"""
 
 def RMA(machine_list, task_list, middle_bound, max_bound):
     machine_list_copy = machine_list.copy()

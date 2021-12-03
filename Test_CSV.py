@@ -7,6 +7,14 @@ from Algorithme.LPT import LPT, LPT_I_r
 from Algorithme.LSA import LSA, LSA_I_r
 from Algorithme.RMA import RMA, RMA_I_r
 
+"""
+Author SAUVÊTRE Lou-Anne, M1 ALMA, University of Nantes
+
+This program aims to implement the LSA (List Scheduling Algorithm) method which takes the tasks in the order initially provided
+and assigns each task to the first available machine.
+
+"""
+
 
 def generate_Ip_test():
     # Data

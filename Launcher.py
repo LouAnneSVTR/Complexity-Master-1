@@ -25,7 +25,6 @@ def generate_tab_I_p(D, M, p):
 
 def generate_tab_I_r(D, M, m, n, k, d_min, d_max):
 
-
     for i in range(m):
         M.append(0)
 
@@ -61,7 +60,7 @@ def launcher():
         average_bound = int(sum(D) / (2 * p))
 
         print()
-
+        print(D)
         print("borne inferieur 'maximum' : ", max_bound)
         print("borne inferieur 'moyenne' : ", average_bound)
 
